@@ -1,0 +1,32 @@
+.header {
+    background-color: #33a360;
+    color: #e3ffef;
+	padding-top: 1px;
+	padding-bottom: 10px;
+    padding-left: 30px;
+	padding-right: 30px;
+    margin: 20px;
+}
+
+.header > h1 {
+	font-size: 60px;
+	color: #40ff68
+}
+
+.header > h3 {
+	text-align: right;
+}
+
+.main_body {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+body {
+    background-color: #e3ffef;
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+	font-size: 20px;
+}
