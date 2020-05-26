@@ -8,7 +8,7 @@
 
 .header > h1 {
 	font-size: 60px;
-	color: #40ff68
+	color: #c8ffc8;
 }
 
 .header > h3 {
@@ -22,10 +22,7 @@
 
 #headshot {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 350px;
-	box-shadow: 5px 5px 15px 5px black;
+	width: 300px;
 }
 
 body {
@@ -35,4 +32,30 @@ body {
 
 h3 > a {
 	color: #e3ffef;
+}
+
+table, #headshot {
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 15px 5px black;
+}
+
+tr:nth-child(2n+1) {
+	background-color: #d8ffd8;
+}
+
+.semester {
+	background-color: #e0f4e8;
+}
+
+th {
+	background-color: #33a360;
+	font-size: 28px;
+	color: #e3ffef;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px 15px;
 }
