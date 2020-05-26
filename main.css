@@ -40,22 +40,32 @@ table, #headshot {
 	box-shadow: 5px 5px 15px 5px black;
 }
 
-tr:nth-child(2n+1) {
-	background-color: #d8ffd8;
-}
-
-.semester {
-	background-color: #e0f4e8;
-}
-
 th {
 	background-color: #33a360;
 	font-size: 28px;
 	color: #e3ffef;
+	padding: 15px !important;
 }
 
 table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 	padding: 5px 15px;
+}
+
+tr:nth-child(2n+1) {
+	background-color: #d8ffd8;
+}
+
+.semester {
+	background-color: #e0f4e8;
+	width: 150px;
+}
+
+#classname {
+	width: 450px;
+}
+
+#coursenumber {
+	width: 200px;
 }
