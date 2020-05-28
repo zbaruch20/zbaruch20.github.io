@@ -3,7 +3,7 @@
     color: #e3ffef;
 	padding: 1px 30px 10px;
 	margin: 20px;
-	box-shadow: 5px 5px 15px 5px black;
+	box-shadow: 3px 3px 15px 3px black;
 }
 
 .header > h1 {
@@ -32,12 +32,17 @@ body {
 
 h3 > a {
 	color: #e3ffef;
+	transition: font-size 0.25s ease-out;
+}
+
+h3 > a:hover {
+	font-size: 22px;
 }
 
 table, #headshot {
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: 5px 5px 15px 5px black;
+	box-shadow: 3px 3px 15px 3px black;
 }
 
 th {
@@ -53,7 +58,7 @@ table, th, td {
 	padding: 5px 15px;
 }
 
-tr:nth-child(2n+1) {
+tr:nth-child(2n-1) {
 	background-color: #d8ffd8;
 }
 
