@@ -56,10 +56,15 @@ table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 	padding: 5px 15px;
+	transition: font-size 0.25s ease-out;
 }
 
 tr:nth-child(2n-1) {
 	background-color: #d8ffd8;
+}
+
+td:not(.semester):hover {
+	font-size: 22px;
 }
 
 .semester {
