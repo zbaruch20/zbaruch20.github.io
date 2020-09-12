@@ -37,7 +37,7 @@
             <td>
                 <ul>
                     <li>Learned basic programming techniques and concepts using Java
-                        (variables, types, computations, strings, boolean expressions, conditional statements, loops,
+                        (variables, types, computations, <code>String</code>s, boolean expressions, conditional statements, loops,
                         methods, arrays, file I/O, object-oriented programming, using and implementing classes).</li>
                     <li>Introduced the Eclipse IDE as a tool for Java development.</li>
                     <li>Implemented simple programs, some of which from a provided skeleton, to demonstrate new concepts. Examples include:</li>
@@ -66,13 +66,13 @@
                         layering, object type vs declared type, object value vs reference value)</li>
                     <li>Introduced JUnit as a framework for unit testing in Java.</li>
                     <li>Implemented layered secondary methods using kernel methods and recursion.</li>
-                    <li>Explored the mathematical models of generic data structures (Queue, Stack, Set, Sequence, Map).</li>
+                    <li>Explored the mathematical models of generic data structures (<code>Queue</code>, <code>Stack</code>, <code>Set</code>, <code>Sequence</code>, <code>Map</code>).</li>
                     <li>Learned the basics on how a Graphical User Interface is implemented.</li>
                     <li>Programming assignments were slightly more complicated, and utilized the provided components. Examples include:</li>
                     <ul>
-                        <li>An RSS reader and aggregator using an XMLTree component, and displayed the output to a webpage using I/O components.</li>
+                        <li>An RSS reader and aggregator using an <code>XMLTree</code> component, and displayed the output to a webpage using I/O components.</li>
                         <li>A utility class that provided methods to generate a reasonably large number and to check whether a number is prime,
-                            using a NaturalNumber component. JUnit tests were used to test the implementations of these methods.</li>
+                            using a <code>NaturalNumber</code> component. JUnit tests were used to test the implementations of these methods.</li>
                         <li>A program that used various data structures to read a glossary from an input file, and
                             generate a webpage for each word in the glossary, linking to other words that may be inside the definition,
                             with an index page listing all the words in alphebetical order.</li>
@@ -96,16 +96,16 @@
                         binary trees, binary search trees, heaps, linked lists, trees).</li>
                     <li>Implemented various software components introduced in CSE 2221 in various ways. Examples include:</li>
                     <ul>
-                        <li>Sequence on two stacks</li>
-                        <li>Set on queue and binary search tree</li>
-                        <li>Map with hashing</li>
-                        <li>SortingMachine using various sorting algorithms (Insertion Sort, QuickSort, HeapSort)</li>
-                        <li>List on singly-linked list and doubly-linked list</li>
+                        <li><code>Sequence</code> on two <code>Stack</code>s</li>
+                        <li><code>Set</code> on <code>Queue</code> and binary search tree</li>
+                        <li><code>Map</code> with hashing</li>
+                        <li><code>SortingMachine</code> using various sorting algorithms (Insertion Sort, QuickSort, HeapSort)</li>
+                        <li><code>List</code> on singly-linked list and doubly-linked list</li>
                     </ul>
                     <li>Explored the basic processes involved in compilation (abstract syntax trees, tokenizing, parsing, code generation).</li>
                     <li>Implemented abstract statement and program components, a tokenizer, a parser, a code generator, and a bytecode interpreter
                         a basic compiler for a simple programming language.</li>
-                    <li>Tied up loose ends in Java (switch statements, enums, standard components, exceptions, static members).</li>
+                    <li>Tied up loose ends in Java (<code>switch</code> statements, enums, standard components, exceptions, static members).</li>
                     <li>For more information, see the course webpage <a href="http://web.cse.ohio-state.edu/software/2231/web-sw2/">here</a>.</li>
                 </ul>
             </td>
@@ -115,7 +115,16 @@
             <td>Foundations I: Discrete Structures</td>
             <td>
                 <ul>
-                    <li>//TODO - What I did in CSE 2321</li>
+                    <li>Intoduced some higher math topics commonly used in Computer Science (proprositional logic, quantifiers,
+                        basic set theory, proof techniques, mathematical induction, graph theory, relations and functions).
+                    </li>
+                    <li>Learned about timing functions (big-O, big-theta, and big-omega notation).</li>
+                    <li>Calculated the asymptotic complexity of various functions.</li>
+                    <li>Analyzed the asymptotic running time of <code>for</code> loops, <code>while</code> loops, and simple
+                    recursive algorithms.</li>
+                    <li>Explored and analyzed several graph algorithms and their applications (transitive closure, breadth-first
+                        search, depth-first search, topological sort).
+                    </li>
                 </ul>
             </td>
         </tr>
@@ -124,7 +133,7 @@
             <td>Introduction to Probability and Statistics for Engineers</td>
             <td>
                 <ul>
-                    <li>//TODO - What I did in STAT 3470</li>
+                    <li>Introduced probability and statistics concepts commonly used in Engineering applications.</li>
                 </ul>
             </td>
         </tr>
@@ -135,7 +144,22 @@
             <td>Foundations II: Data Structures and Algorithms</td>
             <td>
                 <ul>
-                    <li>//TODO - What I did in CSE 2331</li>
+                    <li>Reviewed concepts taught in CSE 2321 (asymptotic notation, analysis of simple algorithms).</li>
+                    <li>Explored and analyzed probabilistic algorithms such as QuickSort.</li>
+                    <li>Discussed several graph properties and algorithms used for them, and proved the correctness of the algorithms.</li>
+                    <ul>
+                        <li>Minimal-spanning trees (Kruskal's algorithm, Prim's algorithm)</li>
+                        <li>Single-source lightest paths problem (Dykstra's algorithm, Bellman-Ford algorithm)</li>
+                        <li>Hamiltonian paths</li>
+                        <li>The traveling salesperson problem</li>
+                    </ul>
+                    <li>Explored the properties and algorithms related to heaps and binary search trees (assignment algorithm,
+                        tree diameter, red-black trees)
+                    </li>
+                    <li>Discussed the sweep-line algorithm and how it can be used to solve geographic problems.</li>
+                    <li>Introduced linear programming and related concepts (setting up a linear program for various applications,
+                        how they're used to find solutions for heuristics, finding solutions).
+                    </li>
                 </ul>
             </td>
         </tr>
@@ -144,7 +168,20 @@
             <td>Systems I: Introduction to Low-Level Programming and Computer Organization</td>
             <td>
                 <ul>
-                    <li>//TODO - What I did in CSE 2421</li>
+                    <li>Introduced Unix and Linux operating systems, the command line, useful commands, and makefiles.</li>
+                    <li>Learned the C programming language and related concepts (encoding, conversions, casting, I/O, control structures,
+                        enumerated data types, pointers, arrays, allocation, pointer arithmetic, structures, function pointers,
+                        strings, debugging, command-line arguments, storage class, scope, linkage).
+                    </li>
+                    <li>Implemented an air traffic control simulator, including a character-based graphical display.</li>
+                    <li>Wrote a generic linked list component, usable with any data type.</li>
+                    <li>Discussed computer systems and related concepts (integer representation, basic operations, endianness,
+                        byte order, integer multiplication and division, IEEE floating point, performance).
+                    </li>
+                    <li>Introduced the x86-84 assembly language and related concepts to low-level programming and computer architecture
+                        (registers, opcodes, branches, loops, functions, callee-saved vs caller-saved, register allocation,
+                        arrays, structs).</li>
+                    <li>Wrote several functions and programs entirely in x86-64 assembler.</li>
                 </ul>
             </td>
         </tr>
