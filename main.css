@@ -107,3 +107,11 @@ td:not(.semester):hover {
 #alt_col > td:nth-child(2n-1) {
 	background-color: #d8ffd8;
 }
+
+#proj_status {
+	width: 200px;
+}
+
+#proj_notes {
+	width: 850px;
+}
