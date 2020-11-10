@@ -1,135 +1,154 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <title>Zachary Baruch's Personal Webpage</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
   <link href="main.css" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <div class="header">
     <h1>Zachary Baruch - Personal Projects</h1>
     <h3>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About</a> | 
-        <a href="resume.html">Resume</a> | 
-        <a href="coursework.html">Coursework</a> | 
-        <a href="projects.html">Projects</a>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="resume.html">Resume</a> |
+      <a href="coursework.html">Coursework</a> |
+      <a href="projects.html">Projects</a>
     </h3>
   </div>
   <div class="main_body">
-      <p>Here are some of the prominent practice projects I have completed or am currently working on.
-        You can access my GitHub profile <a href="https://github.com/zbaruch20" target="_blank">here</a>.
-      </p>
-      <table>
-        <tr>
-          <th id="proj_status">Status</th>
-          <th>Project Name</th>
-          <th id="proj_notes">Notes</th>
-        </tr>
-        <tr>
-          <td>Mostly Complete</td>
-          <td>Personal Website</td>
-          <td>
+    <p>Here are some of the prominent practice projects I have completed or am currently working on.
+      You can access my GitHub profile <a href="https://github.com/zbaruch20" target="_blank">here</a>.
+    </p>
+    <table>
+      <tr>
+        <th id="proj_status">Status</th>
+        <th>Project Name</th>
+        <th id="proj_notes">Notes</th>
+      </tr>
+      <tr>
+        <td>Complete</td>
+        <td>Personal Website</td>
+        <td>
+          <ul>
+            <li>What you're looking at right now!</li>
+            <li>Created a multi-page static website from scratch, to be used as a detailed companion
+              to my regular resume.</li>
+            <li>Used HTML for web content, and CSS for style and animations.</li>
+            <li>Introduced to the Visual Studio Code IDE as a tool for software and web development.</li>
+            <li>Used Git for version control as a means to backup my progress, transfer development across
+              multiple systems, and to practice for CSE 3901 programming assignments.
+            </li>
+            <li>You can view the GitHub repository for this project <a
+                href="https://github.com/zbaruch20/zbaruch20.github.io" target="_blank">here</a>.</li>
+            <li>Future plans: Migrate everything to a Middleman framework</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>In Progress (Partially Complete)</td>
+        <td>Extra Components</td>
+        <td>
+          <ul>
+            <li>Designing and implementing new components and data structures in Java, held to the same standards
+              as <a href="http://web.cse.ohio-state.edu/software/common/doc/" target="_blank">Ohio State's Software
+                Components</a>,
+              using the existing components as a base for the new ones.
+            </li>
+            <li>Continuing use of design-by-contract and precise mathematical definitions to describe
+              components' mathematical models.</li>
+            <li>Current components (more to be added later):</li>
             <ul>
-              <li>What you're looking at right now!</li>
-              <li>Created a multi-page static website from scratch, to be used as a detailed companion
-                to my regular resume.</li>
-              <li>Used HTML for web content, and CSS for style and animations.</li>
-              <li>Introduced to the Visual Studio Code IDE as a tool for software and web development.</li>
-              <li>Used Git for version control as a means to backup my progress, transfer development across
-                multiple systems, and to practice for CSE 3901 programming assignments.
+              <li><code>Deque&lt;T&gt;</code> <i>(complete)</i> - A generic double-ended queue component, allowing the
+                user to access,
+                add elements to, and remove elements from the front and back of the Deque. Various implementations are
+                available:
+                <ul>
+                  <li><code>Deque1L</code> - Represented as a <code>java.util.List</code></li>
+                  <li><code>Deque2</code> - Represented as a <code>Sequence</code></li>
+                  <li><code>Deque3</code> - Represented as a pair of <code>Stack</code>s</li>
+                  <li><code>Deque4</code> - Represented as a doubly-linked list, done "bare-handed"</li>
+                </ul>
               </li>
-              <li>You can view the GitHub repository for this project <a href="https://github.com/zbaruch20/zbaruch20.github.io" target="_blank">here</a>.</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>In Progress (Partially Complete)</td>
-          <td>Extra Components</td>
-          <td>
-            <ul>
-              <li>Designing and implementing new components and data structures in Java, held to the same standards
-                as <a href="http://web.cse.ohio-state.edu/software/common/doc/" target="_blank">Ohio State's Software Components</a>,
-                using the existing components as a base for the new ones.
-              </li>
-              <li>Continuing use of design-by-contract and precise mathematical definitions to describe
-                components' mathematical models.</li>
-              <li>Current components (more to be added later):</li>
-              <ul>
-                <li><code>Deque&lt;T&gt;</code> <i>(complete)</i> - A generic double-ended queue component, allowing the user to access,
-                  add elements to, and remove elements from the front and back of the Deque. Various implementations are
-                  available:
-                  <ul>
-                    <li><code>Deque1L</code> - Represented as a <code>java.util.List</code></li>
-                    <li><code>Deque2</code> - Represented as a <code>Sequence</code></li>
-                    <li><code>Deque3</code> - Represented as a pair of <code>Stack</code>s</li>
-                    <li><code>Deque4</code> - Represented as a doubly-linked list, done "bare-handed"</li>
-                  </ul>
-                </li>
-                <li><code>SortingMachine&lt;T&gt;</code> <i>(complete)</i> - Various new implementations using different structures
-                  and sorting algorithms:
-                  <ul>
-                    <li><code>SortingMachine6</code> - Represented as a <code>Queue</code> (using an embedding of mergesort)</li>
-                    <li><code>SortingMachine7</code> - Represented as a <code>Sequence</code> (using an embedding of selection sort)</li>
-                    <li><code>SortingMachine7a</code> - Represented as a <code>Sequence</code> (using an embedding of
+              <li><code>SortingMachine&lt;T&gt;</code> <i>(complete)</i> - Various new implementations using different
+                structures
+                and sorting algorithms:
+                <ul>
+                  <li><code>SortingMachine6</code> - Represented as a <code>Queue</code> (using an embedding of
+                    mergesort)</li>
+                  <li><code>SortingMachine7</code> - Represented as a <code>Sequence</code> (using an embedding of
+                    selection sort)</li>
+                  <li><code>SortingMachine7a</code> - Represented as a <code>Sequence</code> (using an embedding of
                     insertion sort and binary-search)</li>
-                  </ul>
-                </li>
-                <li><code>Graph&lt;T&gt;</code> <i>(in progress)</i> - A generic graph component, to be represented as an adjacency-list
-                  (represented as a <code>Sequence&lt;Sequence&gt;</code>).</li>
-                <li><code>Multiset&lt;T&gt;</code> <i>(in progress)</i> - A generic multiset component. It functions like a <code>Set</code>
-                but can support duplicate elements. Two implementations will be available:
-                  <ul>
-                    <li><code>Multiset1</code> - Represented as a <code>Map&lt;T, Integer&gt;</code></li>
-                    <li><code>Multiset2</code> - Represented as a <code>Sequence</code></li>
-                  </ul>
-                </li>
-                <li><code>Queue&lt;T&gt;</code> <i>(planned)</i> - Two new implementations using a dynamic array:
-                  <ul>
-                    <li><code>Queue4</code> - Represented as an <code>Array</code></li>
-                    <li><code>Queue4a</code> - Represented as a Java built-in array</li>
-                  </ul>
-                </li>
-              </ul>
-              <li>You can view the GitHub repository for this project <a href="https://github.com/zbaruch20/Extra-Components" target="_blank">here</a>.</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>In Progress</td>
-          <td>Countdown Letters Game</td>
-          <td>
-            <ul>
-              <li>Implementing the letters game from the game show "Countdown" in Ruby.</li>
-              <li>You can watch an example of the original game in action <a href="https://youtu.be/JPNJHoOtBrg?t=191" target="_blank">here</a>.</li>
-              <li>Using object-oriented design principles of Ruby to create classes for stacks and sets of letter-tiles.</li>
-              <li>Using file I/O to read a list of valid words from an external file to be used in the game.</li>
-              <li>Using various gems to colorize output and play an audio file.</li>
-              <li>Using forking to create a separate process that plays an audio file while the main process can continue game execution.</li>
-              <li>You can view the GitHub repository for this project <a href="https://github.com/zbaruch20/Countdown-Game" target="_blank">here</a>.</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>Planned</td>
-          <td>CSE Courses Viewer</td>
-          <td>
-            <ul>
-              <li>Building an application that streamlines the viewing of CSE courses at Ohio State in C#.</li>
-              <li>Allows the user to easily view prerequisites for a certain course, and what courses that it is a prerequisite for.</li>
-              <li>Using Xamarin Forms and MVVM design pattern to create a graphical user interface that can also run on
-                Android devices.
+                </ul>
               </li>
-              <li>Using web-scraping techniques to obtain information for each course from the College of Engineering's
-                <a href="http://coe-portal.cse.ohio-state.edu/pdf-exports/CSE/" target="_blank">Directory of CSE Semester Courses</a>.</li>
-              <li>Using parsing techniques to extract specific prerequisites and exclusions for each course.</li>
-              <li>Implementing custom structs and classes that contain information for each class.</li>
+              <li><code>Graph&lt;T&gt;</code> <i>(in progress)</i> - A generic graph component, to be represented as an
+                adjacency-list
+                (represented as a <code>Sequence&lt;Sequence&gt;</code>).</li>
+              <li><code>Multiset&lt;T&gt;</code> <i>(in progress)</i> - A generic multiset component. It functions like
+                a <code>Set</code>
+                but can support duplicate elements. Two implementations will be available:
+                <ul>
+                  <li><code>Multiset1</code> - Represented as a <code>Map&lt;T, Integer&gt;</code></li>
+                  <li><code>Multiset2</code> - Represented as a <code>Sequence</code></li>
+                </ul>
+              </li>
+              <li><code>Queue&lt;T&gt;</code> <i>(planned)</i> - Two new implementations using a dynamic array:
+                <ul>
+                  <li><code>Queue4</code> - Represented as an <code>Array</code></li>
+                  <li><code>Queue4a</code> - Represented as a Java built-in array</li>
+                </ul>
+              </li>
             </ul>
-          </td>
-        </tr>
-      </table>
+            <li>You can view the GitHub repository for this project <a
+                href="https://github.com/zbaruch20/Extra-Components" target="_blank">here</a>.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>In Progress</td>
+        <td>Countdown Letters Game</td>
+        <td>
+          <ul>
+            <li>Implementing the letters game from the game show "Countdown" in Ruby.</li>
+            <li>You can watch an example of the original game in action <a href="https://youtu.be/JPNJHoOtBrg?t=191"
+                target="_blank">here</a>.</li>
+            <li>Using object-oriented design principles of Ruby to create classes for stacks and sets of letter-tiles.
+            </li>
+            <li>Using file I/O to read a list of valid words from an external file to be used in the game.</li>
+            <li>Using various gems to colorize output and play an audio file.</li>
+            <li>Using forking to create a separate process that plays an audio file while the main process can continue
+              game execution.</li>
+            <li>You can view the GitHub repository for this project <a
+                href="https://github.com/zbaruch20/Countdown-Game" target="_blank">here</a>.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Planned</td>
+        <td>CSE Courses Viewer</td>
+        <td>
+          <ul>
+            <li>Building an application that streamlines the viewing of CSE courses at Ohio State in C#.</li>
+            <li>Allows the user to easily view prerequisites for a certain course, and what courses that it is a
+              prerequisite for.</li>
+            <li>Using Xamarin Forms and MVVM design pattern to create a graphical user interface that can also run on
+              Android devices.
+            </li>
+            <li>Using web-scraping techniques to obtain information for each course from the College of Engineering's
+              <a href="http://coe-portal.cse.ohio-state.edu/pdf-exports/CSE/" target="_blank">Directory of CSE Semester
+                Courses</a>.</li>
+            <li>Using parsing techniques to extract specific prerequisites and exclusions for each course.</li>
+            <li>Implementing custom structs and classes that contain information for each class.</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
   </div>
 </body>
+
 </html>
