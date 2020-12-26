@@ -45,5 +45,13 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
+# Sprokets
+# activate :sprockets
+
 # LiveReload
 activate :livereload
+
+# Relative links and stuff
+set :relative_links, true
+activate :relative_assets
+activate :directory_indexes
