@@ -1,0 +1,8 @@
+# Data for the main pages in the website.
+# Each element in this array is a hash containing the page's name and link
+
+ - { name: Home,       link: index }
+ - { name: About,      link: pages/about }
+ - { name: Resume,     link: pages/resume }
+ - { name: Coursework, link: pages/coursework }
+ - { name: Projects,   link: pages/projects }
