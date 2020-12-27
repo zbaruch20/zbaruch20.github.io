@@ -8,8 +8,8 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= "#{("#{current_page.data.title} - " if current_page.data.title)} Zachary Baruch" %></title>
     <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
     <%= javascript_include_tag "bootstrap.bundle.min.js" %>
+    <%= javascript_include_tag "site" %>
   </head>
   <body>
     <%= partial 'layouts/header' %>

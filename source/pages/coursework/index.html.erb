@@ -8,31 +8,47 @@ header: Previous Relevant Coursework
   For each course, there is a link that provides more information about the content of the course.
 </p>
 
-<% data.coursework.each do |s| %>
-  <p><%= s %></p>
-<% end %>
-
 <!-- Semester tabs (to be filled out with ERB, hard-coding first) -->
 <nav>
-  <div class="nav nav-tabs" id="semesters" role="tablist">
-    <a class="nav-link link-success active" id="nav-au18-tab" data-bs-toggle="tab" href="#nav-au18" role="tab"
-       aria-controls="nav-au18" aria-selected="true">Autumn 2018</a>
-    <a class="nav-link link-success" id="nav-sp19-tab" data-bs-toggle="tab" href="#nav-sp19" role="tab"
-       aria-controls="nav-sp19" aria-selected="false">Spring 2019</a>
-    <a class="nav-link link-success" id="nav-au19-tab" data-bs-toggle="tab" href="#nav-au19" role="tab"
-       aria-controls="nav-au19" aria-selected="false">Autumn 2019</a>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <% data.coursework.each do |id, s| %>
+      <a class="nav-link link-success" id="nav-<%= id %>-tab" data-bs-toggle="tab" href="#nav-<%= id %>"
+         role="tab" aria-controls="nav-<%= id %>" aria-selected="false"><%= s.name %></a>
+    <% end %>
   </div>
 </nav>
 
 <!-- Tab content (to be filled with partials and more ERB) -->
-<div class="tab-content" id="semestersContent">
-  <div class="tab-pane fade show active" id="nav-au18" role="tabpanel" arialabelledby="nav-au18-tab">
-    <p>TODO: Classes for AU18</p>
-  </div>
-  <div class="tab-pane fade" id="nav-sp19" role="tabpanel" arialabelledby="nav-sp19-tab">
-    <p>TODO: Classes for SP19</p>
-  </div>
-  <div class="tab-pane fade" id="nav-au19" role="tabpanel" arialabelledby="nav-au19-tab">
-    <p>TODO: Classes for AU19</p>
-  </div>
+<div class="tab-content" id="nav-tabContent">
+  <% data.coursework.each do |id, s| %>
+
+    <!-- Tab for each semester -->
+    <div class="tab-pane fade" id="nav-<%= id %>" role="tabpanel" aria-labelledby="nav-<%= id %>-tab">
+      <div class="accordion" id="accordion-<%= id %>">
+        <% s.courses.each do |c| %>
+
+          <!-- Accordion for each course -->
+          <% c_id = c.number.downcase.delete ' ' %>
+          <div class="accordion-item">
+            <!-- Header -->
+            <h2 class="accordion-header" id="heading-<%= c_id %>">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse-<%= c_id %>" aria-expanded="false" aria-controls="collapse-<%= c_id %>">
+                <%= "#{c.number}: #{c.name}" %>
+              </button>
+            </h2>
+
+            <!-- Body -->
+            <div id="collapse-<%= c_id %>" class="accordion-collapse collapse" aria-labelledby="heading-<%= c_id %>" data-bs-parent="#accordion-<%= id %>">
+              <div class="accordion-body">
+                <%= partial "layouts/coursework/#{id}/_#{c_id}" %>
+              </div>
+            </div>
+          </div>
+
+        <% end %>
+      </div>
+    </div>
+
+  <% end %>
 </div>
