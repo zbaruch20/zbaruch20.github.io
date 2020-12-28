@@ -1,12 +1,12 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-success">
   <div class="container">
     <!-- logo --->
-    <%= link_to 'Zachary Baruch', 'index', class: 'navbar-brand', id: 'logo' %>
+    <%= link_to 'Zachary Baruch', 'index', class: 'navbar-brand', id: 'logo', relative: false %>
 
     <!-- main navbar items --->
     <div class="navbar-nav">
       <% data.pages.each do |p| %>
-        <%= link_to p.name, p.link, class: 'nav-link' %>
+        <%= link_to p.name, p.link, class: 'nav-link', relative: false %>
       <% end %>
     </div>
   </div>

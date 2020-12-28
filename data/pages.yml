@@ -3,6 +3,6 @@
 
  - { name: Home,       link: index }
  - { name: About,      link: pages/about }
- - { name: Resume,     link: pages/resume }
- - { name: Coursework, link: pages/coursework }
- - { name: Projects,   link: pages/projects }
+ - { name: Resume,     link: pages/resume/index }
+ - { name: Coursework, link: pages/coursework/index }
+ - { name: Projects,   link: pages/projects/index }
