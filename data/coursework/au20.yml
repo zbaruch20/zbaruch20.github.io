@@ -1,0 +1,7 @@
+name: Autumn 2020
+courses:
+  - {number: CSE 2431, name: 'Systems II: Introduction to Operating Systems'}
+  - {number: CSE 2501, name: 'Social, Ethical, and Professional Issues in Computing'}
+  - {number: CSE 3901, name: 'Project: Design, Development, and Documentation of Web Applications'}
+  - {number: CSE 4253, name: Programming in C#}
+  - {number: MATH 2568, name: Linear Algebra}

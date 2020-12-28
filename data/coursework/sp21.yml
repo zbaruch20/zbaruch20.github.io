@@ -1,0 +1,5 @@
+name: Spring 2021
+courses:
+  - {number: CSE 3231, name: Software Engineering Techniques}
+  - {number: CSE 3241, name: Introduction to Database Systems}
+  - {number: CSE 3341, name: Principles of Programming Languages}

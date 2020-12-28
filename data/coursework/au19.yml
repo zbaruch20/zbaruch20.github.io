@@ -1,0 +1,5 @@
+name: Autumn 2019
+courses:
+ - {number: CSE 2231, name: 'Software II: Software Development and Design'}
+ - {number: CSE 2321, name: 'Foundations I: Discrete Structures'}
+ - {number: STAT 3470, name: Introduction to Probability and Statistics for Engineers}

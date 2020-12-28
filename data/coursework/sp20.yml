@@ -1,0 +1,6 @@
+name: Spring 2020
+courses:
+  - {number: CSE 2331, name: 'Foundations II: Data Structures and Algorithms'}
+  - {number: CSE 2421, name: 'Systems I: Introduction to Low-Level Programming and Computer Organization'}
+  - {number: ECE 2060, name: Introduction to Digital Logic}
+  - {number: MATH 3345, name: Foundations of Higher Mathematics}
