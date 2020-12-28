@@ -8,24 +8,28 @@ header: Previous Relevant Coursework
   To see more information for each course, simply click on the corresponding tab.
 </p>
 
-<!-- Semester tabs (to be filled out with ERB, hard-coding first) -->
+<%# Orders the semester keys by its idx property %>
+<% cw = data.coursework %>
+<% semesters = cw.keys.sort_by { |id| cw[id].idx } %>
+
+<!-- Semester tabs -->
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <% data.coursework.each do |id, s| %>
+    <% semesters.each do |id| %>
       <a class="nav-link link-success" id="nav-<%= id %>-tab" data-bs-toggle="tab" href="#nav-<%= id %>"
-         role="tab" aria-controls="nav-<%= id %>" aria-selected="false"><%= s.name %></a>
+         role="tab" aria-controls="nav-<%= id %>" aria-selected="false"><%= cw[id].name %></a>
     <% end %>
   </div>
 </nav>
 
-<!-- Tab content (to be filled with partials and more ERB) -->
+<!-- Tab content -->
 <div class="tab-content" id="nav-tabContent">
-  <% data.coursework.each do |id, s| %>
+  <% semesters.each do |id| %>
 
     <!-- Tab for each semester -->
     <div class="tab-pane fade" id="nav-<%= id %>" role="tabpanel" aria-labelledby="nav-<%= id %>-tab">
       <div class="accordion" id="accordion-<%= id %>">
-        <% s.courses.each do |c| %>
+        <% cw[id].courses.each do |c| %>
 
           <!-- Accordion for each course -->
           <% c_id = c.number.downcase.delete ' ' %>

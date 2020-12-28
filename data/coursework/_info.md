@@ -1,8 +1,9 @@
 # data.coursework
 
-`data.coursework` is represented as a hash, with each key representing the id for a semester. Each value in this hash is another hash with two entries:
+`data.coursework` is represented as a hash, with each key representing the id for a semester. Each value in this hash is another hash with three entries:
 
 * `name`: The name of the semester.
+* `idx`: Essentially, the position where the semester appears in the tab list. The lower the number, the earlier it appears.
 * `courses`: An array of the courses in each semester. Each course is itself a hash with two entries:
 *  * `number`: The course number.
 *  * `name`: The name of the course.

@@ -1,4 +1,5 @@
 name: Autumn 2019
+idx: 2
 courses:
  - {number: CSE 2231, name: 'Software II: Software Development and Design'}
  - {number: CSE 2321, name: 'Foundations I: Discrete Structures'}

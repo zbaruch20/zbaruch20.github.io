@@ -1,4 +1,5 @@
 name: Spring 2020
+idx: 3
 courses:
   - {number: CSE 2331, name: 'Foundations II: Data Structures and Algorithms'}
   - {number: CSE 2421, name: 'Systems I: Introduction to Low-Level Programming and Computer Organization'}

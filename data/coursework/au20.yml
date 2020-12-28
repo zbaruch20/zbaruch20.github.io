@@ -1,4 +1,5 @@
 name: Autumn 2020
+idx: 4
 courses:
   - {number: CSE 2431, name: 'Systems II: Introduction to Operating Systems'}
   - {number: CSE 2501, name: 'Social, Ethical, and Professional Issues in Computing'}
