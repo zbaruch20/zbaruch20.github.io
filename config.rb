@@ -55,3 +55,8 @@ activate :livereload
 set :relative_links, true
 activate :relative_assets
 activate :directory_indexes
+
+# Deploy
+activate :deploy do |deploy|
+  deploy.method = :git
+end
