@@ -1,5 +1,27 @@
 @import "bootstrap.min.css";
 
+/* variables */
+$green: #198754;
+
+/* functions */
+
+// Tint a color: mix a color with white
+@function tint-color($color, $weight) {
+  @return mix(white, $color, $weight);
+}
+
+// Shade a color: mix a color with black
+@function shade-color($color, $weight) {
+  @return mix(black, $color, $weight);
+}
+
+// Shade the color if the weight is positive, else tint it
+@function shift-color($color, $weight) {
+  @return if($weight > 0, shade-color($color, $weight), tint-color($color, -$weight));
+}
+
+/* styling */
+
 body {
   margin-top: 80px;
 }
@@ -22,4 +44,9 @@ img {
   &.bio {
     padding-bottom: 20px;
   }
+}
+
+.accordion-button[aria-expanded=true] {
+  background-color: tint-color($green, 80%);
+  color: $green;
 }
