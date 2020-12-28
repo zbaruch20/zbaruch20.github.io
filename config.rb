@@ -58,5 +58,5 @@ activate :directory_indexes
 
 # Deploy
 activate :deploy do |deploy|
-  deploy.method = :git
+  deploy.deploy_method = :git
 end
