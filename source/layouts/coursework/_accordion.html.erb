@@ -1,0 +1,29 @@
+<%#
+  Local Variables:
+
+  hsh: The hash containing information for each course.
+  id: The course id to lookup.
+%>
+
+<% hsh[id].courses.each do |c| %>
+
+  <!-- Accordion for each course -->
+  <% c_id = c.number.downcase.delete ' ' %>
+  <div class="accordion-item">
+    <!-- Header -->
+    <h2 class="accordion-header" id="heading-<%= c_id %>">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-<%= c_id %>" aria-expanded="false" aria-controls="collapse-<%= c_id %>">
+        <%= "#{c.number} - #{c.name}" %>
+      </button>
+    </h2>
+
+    <!-- Body -->
+    <div id="collapse-<%= c_id %>" class="accordion-collapse collapse" aria-labelledby="heading-<%= c_id %>" data-bs-parent="#accordion-<%= id %>">
+      <div class="accordion-body">
+        <%= partial "layouts/coursework/#{id}/_#{c_id}" %>
+      </div>
+    </div>
+  </div>
+
+<% end %>

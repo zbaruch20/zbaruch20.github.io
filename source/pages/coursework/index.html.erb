@@ -12,49 +12,5 @@ header: Previous Relevant Coursework
 <% cw = data.coursework %>
 <% semesters = cw.keys.sort_by { |id| cw[id].idx } %>
 
-<!-- Semester tabs -->
-<nav>
-  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <% semesters.each do |id| %>
-      <a class="nav-link link-success" id="nav-<%= id %>-tab" data-bs-toggle="tab" href="#nav-<%= id %>"
-         role="tab" aria-controls="nav-<%= id %>" aria-selected="false"><%= cw[id].name %></a>
-    <% end %>
-  </div>
-</nav>
-
-<!-- Tab content -->
-<div class="tab-content" id="nav-tabContent">
-  <% semesters.each do |id| %>
-
-    <!-- Tab for each semester -->
-    <div class="tab-pane fade" id="nav-<%= id %>" role="tabpanel" aria-labelledby="nav-<%= id %>-tab">
-      <div class="accordion" id="accordion-<%= id %>">
-        <% cw[id].courses.each do |c| %>
-
-          <!-- Accordion for each course -->
-          <% c_id = c.number.downcase.delete ' ' %>
-          <div class="accordion-item">
-            <!-- Header -->
-            <h2 class="accordion-header" id="heading-<%= c_id %>">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapse-<%= c_id %>" aria-expanded="false" aria-controls="collapse-<%= c_id %>">
-                <%= "#{c.number}: #{c.name}" %>
-              </button>
-            </h2>
-
-            <!-- Body -->
-            <div id="collapse-<%= c_id %>" class="accordion-collapse collapse" aria-labelledby="heading-<%= c_id %>" data-bs-parent="#accordion-<%= id %>">
-              <div class="accordion-body">
-                <%= partial "layouts/coursework/#{id}/_#{c_id}" %>
-              </div>
-            </div>
-          </div>
-
-        <% end %>
-      </div>
-    </div>
-
-  <% end %>
-</div>
-
+<%= partial 'layouts/tabs', locals: { hsh: cw, keys: semesters, tab_content: 'layouts/coursework/accordion' } %>
 <%= partial 'layouts/home_button' %>
