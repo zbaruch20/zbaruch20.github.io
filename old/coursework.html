@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Zachary Baruch's Personal Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="header">
+    <h1>Zachary Baruch - Previous Coursework</h1>
+    <h3>
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="resume.html">Resume</a> | 
+        <a href="coursework.html">Coursework</a> | 
+        <a href="projects.html">Projects</a>
+    </h3>
+  </div>
+  <div class="main_body">
+    <p>Here are some previous classes I have taken at Ohio State. For each class,
+        I have provided some information on projects, tasks, and topics I completed.
+    </p>
+    &nbsp;
+    <table>
+        <tr>
+            <th>Semester</th>
+            <th id="coursenumber">Course Number</th>
+            <th id="classname">Class Name</th>
+            <th>More Information</th>
+        </tr>
+        <!-- AU18 -->
+        <tr>
+            <td class="semester">Autumn 2018</td>
+            <td>CSE 1223</td>
+            <td>Introduction to Programming in Java</td>
+            <td>
+                <ul>
+                    <li>Learned basic programming techniques and concepts using Java
+                        (variables, types, computations, <code>String</code>s, boolean expressions, conditional statements, loops,
+                        methods, arrays, file I/O, object-oriented programming, using and implementing classes).</li>
+                    <li>Introduced the Eclipse IDE as a tool for Java development.</li>
+                    <li>Implemented simple programs, some of which from a provided skeleton, to demonstrate new concepts. Examples include:</li>
+                    <ul>
+                        <li>A program prompting a user for a string, and displaying information about that string.</li>
+                        <li>A game similar to "Rock, Paper, Scissors".</li>
+                        <li>Implementing methods containing algorithms to convert between binary and decimal numbers, and write a main program that utilizes the algorithms implemented.</li>
+                        <li>A program that writes a formatted table to a file, using data from an input file.</li>
+                    </ul>
+                </ul>
+            </td>
+        </tr>
+        <!-- SP19 -->
+        <tr>
+            <td class="semester">Spring 2019</td>
+            <td>CSE 2221</td>
+            <td>Software I: Software Components</td>
+            <td>
+                <ul>
+                    <li>Used Java as an introduction to Software Engineering concepts.</li>
+                    <li>Reviewed/reintroduced Java and programming concepts.</li>
+                    <ul><li>Additionally introduced to parameter passing, references, and recursion.</li></ul>
+                    <li>Introduced to the design-by-contract principle.</li>
+                    <li>Used an external library of software components to better understand their function and design.</li>
+                    <li>Learned various concepts used in object-oriented programming (packages, interfaces, classes, inheritance,
+                        layering, object type vs declared type, object value vs reference value)</li>
+                    <li>Introduced JUnit as a framework for unit testing in Java.</li>
+                    <li>Implemented layered secondary methods using kernel methods and recursion.</li>
+                    <li>Explored the mathematical models of generic data structures (<code>Queue</code>, <code>Stack</code>, <code>Set</code>, <code>Sequence</code>, <code>Map</code>).</li>
+                    <li>Learned the basics on how a Graphical User Interface is implemented.</li>
+                    <li>Programming assignments were slightly more complicated, and utilized the provided components. Examples include:</li>
+                    <ul>
+                        <li>An RSS reader and aggregator using an <code>XMLTree</code> component, and displayed the output to a webpage using I/O components.</li>
+                        <li>A utility class that provided methods to generate a reasonably large number and to check whether a number is prime,
+                            using a <code>NaturalNumber</code> component. JUnit tests were used to test the implementations of these methods.</li>
+                        <li>A program that used various data structures to read a glossary from an input file, and
+                            generate a webpage for each word in the glossary, linking to other words that may be inside the definition,
+                            with an index page listing all the words in alphebetical order.</li>
+                    </ul>
+                    <li>For more information, see the course webpage <a target="_blank" href="http://web.cse.ohio-state.edu/software/2221/web-sw1/">here</a>.</li>
+                </ul>
+            </td>
+        </tr>
+        <!-- AU19 -->
+        <tr>
+            <td rowspan="3" class="semester">Autumn 2019</td>
+            <td>CSE 2231</td>
+            <td>Software II: Software Development and Design</td>
+            <td>
+                <ul>
+                    <li>Direct continuation of CSE 2221, with a greater focus on the implementation of software components.</li>
+                    <li>Discussed how abstract classes are used in object-oriented programming and unit testing.</li>
+                    <li>Explored how kernel classes are implemented, and how the implementer view of a component relates to the
+                        client view and its mathematical model.</li>
+                    <li>Introduced specialized data structures to be used as a base to implement other components on (hash tables,
+                        binary trees, binary search trees, heaps, linked lists, trees).</li>
+                    <li>Implemented various software components introduced in CSE 2221 in various ways. Examples include:</li>
+                    <ul>
+                        <li><code>Sequence</code> on two <code>Stack</code>s</li>
+                        <li><code>Set</code> on <code>Queue</code> and binary search tree</li>
+                        <li><code>Map</code> with hashing</li>
+                        <li><code>SortingMachine</code> using various sorting algorithms (Insertion Sort, QuickSort, HeapSort)</li>
+                        <li><code>List</code> on singly-linked list and doubly-linked list</li>
+                    </ul>
+                    <li>Explored the basic processes involved in compilation (abstract syntax trees, tokenizing, parsing, code generation).</li>
+                    <li>Implemented abstract statement and program components, a tokenizer, a parser, a code generator, and a bytecode interpreter
+                        a basic compiler for a simple programming language.</li>
+                    <li>Tied up loose ends in Java (<code>switch</code> statements, enums, standard components, exceptions, static members).</li>
+                    <li>For more information, see the course webpage <a target="_blank" href="http://web.cse.ohio-state.edu/software/2231/web-sw2/">here</a>.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>CSE 2321</td>
+            <td>Foundations I: Discrete Structures</td>
+            <td>
+                <ul>
+                    <li>Intoduced some higher math topics commonly used in Computer Science (proprositional logic, quantifiers,
+                        basic set theory, proof techniques, mathematical induction, graph theory, relations and functions).
+                    </li>
+                    <li>Learned about timing functions (big-O, big-theta, and big-omega notation).</li>
+                    <li>Calculated the asymptotic complexity of various functions.</li>
+                    <li>Analyzed the asymptotic running time of <code>for</code> loops, <code>while</code> loops, and simple
+                    recursive algorithms.</li>
+                    <li>Explored and analyzed several graph algorithms and their applications (transitive closure, breadth-first
+                        search, depth-first search, topological sort).
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>STAT 3470</td>
+            <td>Introduction to Probability and Statistics for Engineers</td>
+            <td>
+                <ul>
+                    <li>Introduced probability and statistics concepts commonly used in Engineering applications.</li>
+                </ul>
+            </td>
+        </tr>
+        <!-- SP20 -->
+        <tr>
+            <td rowspan="4" class="semester">Spring 2020</td>
+            <td>CSE 2331</td>
+            <td>Foundations II: Data Structures and Algorithms</td>
+            <td>
+                <ul>
+                    <li>Reviewed concepts taught in CSE 2321 (asymptotic notation, analysis of simple algorithms).</li>
+                    <li>Explored and analyzed probabilistic algorithms such as QuickSort.</li>
+                    <li>Discussed several graph properties and algorithms used for them, and proved the correctness of the algorithms.</li>
+                    <ul>
+                        <li>Minimal-spanning trees (Kruskal's algorithm, Prim's algorithm)</li>
+                        <li>Single-source lightest paths problem (Dykstra's algorithm, Bellman-Ford algorithm)</li>
+                        <li>Hamiltonian paths</li>
+                        <li>The traveling salesperson problem</li>
+                    </ul>
+                    <li>Explored the properties and algorithms related to heaps and binary search trees (assignment algorithm,
+                        tree diameter, red-black trees)
+                    </li>
+                    <li>Discussed the sweep-line algorithm and how it can be used to solve geographic problems.</li>
+                    <li>Introduced linear programming and related concepts (setting up a linear program for various applications,
+                        how they're used to find solutions for heuristics, finding solutions).
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>CSE 2421</td>
+            <td>Systems I: Introduction to Low-Level Programming and Computer Organization</td>
+            <td>
+                <ul>
+                    <li>Introduced Unix and Linux operating systems, the command line, useful commands, and makefiles.</li>
+                    <li>Learned the C programming language and related concepts (encoding, conversions, casting, I/O, control structures,
+                        enumerated data types, pointers, arrays, allocation, pointer arithmetic, structures, function pointers,
+                        strings, debugging, command-line arguments, storage class, scope, linkage).
+                    </li>
+                    <li>Implemented an air traffic control simulator, including a character-based graphical display.</li>
+                    <li>Wrote a generic linked list component, usable with any data type.</li>
+                    <li>Discussed computer systems and related concepts (integer representation, basic operations, endianness,
+                        byte order, integer multiplication and division, IEEE floating point, performance).
+                    </li>
+                    <li>Introduced the x86-84 assembly language and related concepts to low-level programming and computer architecture
+                        (registers, opcodes, branches, loops, functions, callee-saved vs caller-saved, register allocation,
+                        arrays, structs).</li>
+                    <li>Wrote several functions and programs entirely in x86-64 assembler.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>ECE 2060</td>
+            <td>Introduction to Digital Logic</td>
+            <td>
+                <ul>
+                    <li>Discussed number systems and conversion.</li>
+                    <li>Introduced digital logic concepts and components (boolean algrebra, logic gates, Karnaugh-maps, timing diagrams,
+                        multiplexers, three-state buffers, decoders, programmable logic arrays, latches, flip-flops)</li>
+                    <li>Designed and analyzed adders, registers, counters, and clocked sequential circuits.</li>
+                    <li>Used Intel's Quartus Prime software to design and implement a "Simon Says" game.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>MATH 3345</td>
+            <td>Foundations of Higher Mathematics</td>
+            <td>
+                <ul>
+                    <li>Discussed several higher-math topics more in-depth than from CSE 2321.</li>
+                    <li>Used proof techniques to write many proofs for concepts in number theory and set theory.</li>
+                </ul>
+            </td>
+        </tr>
+        <!-- AU20 -->
+        <tr>
+            <td rowspan="5" class="semester">Autumn 2020</td>
+            <td>CSE 2431</td>
+            <td>Systems II: Introduction to Operating Systems</td>
+            <td>
+                <ul>
+                    <li>Discussing concepts related to the design and implementation of computer operating systems
+                        (operating system structures, processes, threads, concurrency, CPU scheduling, synchronization,
+                        synchronization tools, deadlocks, main memory, virtual memory, mass-storage structures, I/O
+                        systems, file-system interface).
+                    </li>
+                    <li>Using VirtualBox to create an Ubuntu virtual machine to use for lab assignments.</li>
+                    <li>Currently building a simple command-line shell interface in C that accepts user commands, creates a
+                        child process, and executes the user commands in the child process.
+                    </li>
+                    <li>Future programming assignments TBD.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>CSE 2501</td>
+            <td>Social, Ethical, and Professional Issues in Computing</td>
+            <td>
+                <ul>
+                    <li>Discussing concepts related to ethical theory and applying them to problems in the world of computing.</li>
+                    <li>Writing a research paper and a companion presentation on a self-selected topic based on a
+                        current or recent issue in computing.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>CSE 3901</td>
+            <td>Project: Design, Development, and Documentation of Web Applications</td>
+            <td>
+                <ul>
+                    <li>Exploring tools used in software engineering and web applications (architecture, Git, Ruby, regular expressions,
+                        networking, HTTP, HTML, CSS, static site generation, JavaScript, model-view-controller system, Rails, unicode, UTF-8,
+                        cryptography).
+                    </li>
+                    <li>Being introduced to the Ruby programming language (dynamic types, useful classes and methods, blocks, hashes,
+                        symbols, object-oriented programming).
+                    </li>
+                    <li>Being introduced to the JavaScript programming language (coercion, functions, arrays, objects, prototypes, DOM, events).</li>
+                    <li>Being introduced to the Rails framework (models, associations, validations, routes, views, controllers).</li>
+                    <li>Working with a home group of four students for programming assignments, and a separate technology team for a
+                        technology presentation.</li>
+                    <li>Implementing the game of "Set" twice, once in Ruby and once in JavaScript.</li>
+                    <li>Writing a Ruby program to scrape and process some interesting data from a publicly accessible Ohio State website.</li>
+                    <li>Redesigning (and improving!) a CSE professor's website.</li>
+                    <li>Designing and implementing a web application to streamline the collection, collation, and analysis of peer evaluatons.</li>
+                    <ul>
+                        <li>We will release both a beta version and final deployment.</li>
+                        <li>We will also be presenting a demo of this project to the class.</li>
+                    </ul>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>CSE 4253</td>
+            <td>Programming in C#</td>
+            <td>
+                <ul>
+                    <li>Being exposed to the C# programming language and related concepts (classes and objects, garbage collection,
+                        extending classes, programming to interfaces, inheritance, generics, .NET collections, iterators, enumerations, exceptions,
+                        forms, GUI classes, delegates, events, common language runtime, assemblies).
+                    </li>
+                    <li>Currently writing a simple program that reads the text from the clipboard and prints out a sorted list of all
+                        the unique words or terms.
+                    </li>
+                    <li>Will be writing a class library that represents a logical scene graph, along with a main console application that creates
+                        and displays some scenegraphs.</li>
+                    <li>Will be using Windows Forms and Xamarin to create GUI applications.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>MATH 2568</td>
+            <td>Linear Algebra</td>
+            <td>
+                <ul>
+                    <li>Using MATLAB to assist in solving problems in concepts related to matrices and linear algebra.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

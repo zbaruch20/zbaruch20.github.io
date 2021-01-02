@@ -2,7 +2,7 @@
 # Each element in this array is a hash containing the page's name and link
 
  - { name: Home,       link: index }
- - { name: About,      link: pages/about }
- - { name: Resume,     link: pages/resume/index }
- - { name: Coursework, link: pages/coursework/index }
- - { name: Projects,   link: pages/projects/index }
+ - { name: About,      link: about }
+ - { name: Resume,     link: resume }
+ - { name: Coursework, link: coursework }
+ - { name: Projects,   link: projects }
