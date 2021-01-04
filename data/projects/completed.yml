@@ -1,5 +1,5 @@
 name: Completed Personal Projects
-idx: 2
+idx: 1
 projects:
  - { id: site_1, name: Personal Website v1 }
  - { id: countdown, name: Countdown Letters Game }
