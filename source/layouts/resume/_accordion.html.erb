@@ -7,22 +7,41 @@
 
 <% hsh[id].exps.each do |p| %>
 
-  <!-- Accordion for each project -->
-  <div class="accordion-item">
-    <!-- Header -->
-    <h2 class="accordion-header" id="heading-<%= p.id %>">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapse-<%= p.id %>" aria-expanded="false" aria-controls="collapse-<%= p.id %>">
-        <%= p.name %>
-      </button>
-    </h2>
+  <%# Special format for skills %>
+  <% if id == 'skills' %>
 
-    <!-- Body -->
-    <div id="collapse-<%= p.id %>" class="accordion-collapse collapse" aria-labelledby="heading-<%= p.id %>" data-bs-parent="#accordion-<%= id %>">
-      <div class="accordion-body">
-        <%= partial "layouts/resume/#{id}/#{p.id}" %>
+    <!-- List Group of skill types -->
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span class="fs-4 fw-bolder"><%= p.name %></span>
+        <!-- List of individual skills -->
+        <ul>
+          <% p.skills.sort_by { |s| s }.each do |s| %> <%# Alphabetize skills %>
+            <li><%= s %></li>
+          <% end %>
+        </ul>
+      </li>
+    </ul>
+
+  <% else %>
+
+    <!-- Accordion for each entry -->
+    <div class="accordion-item">
+      <!-- Header -->
+      <h2 class="accordion-header" id="heading-<%= p.id %>">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-<%= p.id %>" aria-expanded="false" aria-controls="collapse-<%= p.id %>">
+          <%= p.name %>
+        </button>
+      </h2>
+
+      <!-- Body -->
+      <div id="collapse-<%= p.id %>" class="accordion-collapse collapse" aria-labelledby="heading-<%= p.id %>" data-bs-parent="#accordion-<%= id %>">
+        <div class="accordion-body">
+          <%= partial "layouts/resume/#{id}/#{p.id}" %>
+        </div>
       </div>
     </div>
-  </div>
 
+  <% end %>
 <% end %>
