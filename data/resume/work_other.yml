@@ -1,0 +1,6 @@
+name: Other Work Experience
+idx: 2
+entries:
+ - { id: kroger, name: 'The Kroger Company - Columbus, Ohio' }
+ - { id: ref, name: 'The Ohio State University Student Life Recreational Sports - Columbus, Ohio' }
+ - { id: cnam, name: 'Camp Nock-a-Mixon - Kintnersville, Pennsylvania' }
