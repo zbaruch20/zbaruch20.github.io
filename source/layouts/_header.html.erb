@@ -1,13 +1,21 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-success">
   <div class="container">
-    <!-- logo --->
+    <!-- logo -->
     <%= link_to 'Zachary Baruch', 'index', class: 'navbar-brand', id: 'logo' %>
 
-    <!-- main navbar items --->
-    <div class="navbar-nav">
-      <% data.pages.each do |p| %>
-        <%= link_to p.name, p.link, class: 'nav-link' %>
-      <% end %>
+    <!-- toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- main navbar items -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="navbar-nav">
+        <% data.pages.each do |p| %>
+          <%= link_to p.name, p.link, class: 'nav-link' %>
+        <% end %>
+      </div>
     </div>
   </div>
 </nav>
