@@ -1,0 +1,5 @@
+name: Personal Projects In Progress
+idx: 1
+projects:
+ - { id: extra, name: Extra Java Components }
+ - { id: revamp, name: Personal Website Revamp }

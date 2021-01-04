@@ -1,0 +1,28 @@
+<%#
+  Local Variables:
+
+  hsh: The hash containing information for each project.
+  id: The category id to lookup.
+%>
+
+<% hsh[id].projects.each do |p| %>
+
+  <!-- Accordion for each project -->
+  <div class="accordion-item">
+    <!-- Header -->
+    <h2 class="accordion-header" id="heading-<%= p.id %>">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-<%= p.id %>" aria-expanded="false" aria-controls="collapse-<%= p.id %>">
+        <%= p.name %>
+      </button>
+    </h2>
+
+    <!-- Body -->
+    <div id="collapse-<%= p.id %>" class="accordion-collapse collapse" aria-labelledby="heading-<%= p.id %>" data-bs-parent="#accordion-<%= id %>">
+      <div class="accordion-body">
+        <%= partial "layouts/projects/#{p.id}" %>
+      </div>
+    </div>
+  </div>
+
+<% end %>

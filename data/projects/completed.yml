@@ -1,0 +1,4 @@
+name: Completed Personal Projects
+idx: 2
+projects:
+ - { id: countdown, name: Countdown Letters Game }

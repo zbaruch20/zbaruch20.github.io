@@ -1,0 +1,6 @@
+name: Projects Completed for Coursework
+idx: 0
+projects:
+ - { id: components, name: Various Java Components }
+ - { id: compiler, name: BugsWorld Compiler }
+ - { id: atc, name: Colorado Air Traffic Control Simulator }

@@ -7,3 +7,10 @@ header: Personal Projects
   Use the tabs to view personal projects and projects that I have completed for coursework, organized by completion status.
   To see more information for each project, simply click on the dropdown for the corresponding project.
 </p>
+
+<%# Orders the category keys by its idx property %>
+<% projs = data.projects %>
+<% categories = projs.keys.sort_by { |id| projs[id].idx } %>
+
+<%= partial 'layouts/tabs', locals: { hsh: projs, keys: categories, tab_content: 'layouts/projects/accordion' } %>
+<%= partial 'layouts/home_button' %>
