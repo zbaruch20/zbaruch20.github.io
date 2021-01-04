@@ -1,0 +1,33 @@
+name: Relevant Skills
+idx: 3
+exps: # Array of hashes, each has keys +name+ and +skills+
+ - 
+   name: Programming Languages
+   skills:
+    - Java
+    - C
+    - C#
+    - Ruby
+    - JavaScript
+    - HTML/CSS
+ - 
+   name: Software Development Tools and Frameworks
+   skills: 
+    - UNIX/Ubuntu
+    - Rails
+    - RESTful Services
+    - Xamarin
+    - Node.js
+    - Bootstrap
+    - Visual Studio IDE
+    - Visual Studio Code IDE
+    - Eclipse IDE
+    - Git Version Control
+    - GitHub
+ - 
+   name: Miscallaneous
+   skills:
+    - Computer Architecture
+    - Computer Hardware
+    - Microsoft Office Suite (Excel, Powerpoint, Word)
+    - Adobe Creative Suite (Bridge, Illustrator, InDesign, Photoshop)
