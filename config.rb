@@ -52,7 +52,7 @@ page '/*.txt', layout: false
 activate :livereload
 
 # Relative links and stuff
-set :relative_links, true
+# set :relative_links, true
 activate :relative_assets
 activate :directory_indexes
 

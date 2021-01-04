@@ -1,5 +1,5 @@
 name: Education
 idx: 0
-entries:
+exps:
  - { id: osu, name: 'The Ohio State University - Columbus, Ohio' }
  - { id: wantagh, name: 'Wantagh High School - Wantagh, New York' }
