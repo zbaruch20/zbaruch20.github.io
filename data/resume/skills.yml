@@ -30,7 +30,7 @@ exps: # Array of hashes, each has keys +name+ and +skills+
     - Relational Database Modeling
     - .NET Core
  - 
-   name: Miscallaneous
+   name: Miscellaneous
    skills:
     - Computer Architecture
     - Computer Hardware
