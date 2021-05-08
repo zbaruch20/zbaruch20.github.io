@@ -5,7 +5,7 @@
 # 2. Include these values as command-line arguments, with the order being FILE_NAME, PREFIX, EXTENSION.
 #    You can also include a 4th argument to include a filler line
 
-FILE_NAME = ARGV[0] || 'helpers/proj_ids.txt'.freeze
+FILE_NAME = ARGV[0] || 'helper_scripts/proj_ids.txt'.freeze
 PREFIX = ARGV[1] || 'source/layouts/projects/_'.freeze
 EXTENSION = ARGV[2] || '.html.md.erb'.freeze
 

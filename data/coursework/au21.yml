@@ -1,0 +1,7 @@
+name: Autumn 2021
+idx: 6
+courses:
+  - {number: CSE 3232, name: Software Requirements Analysis}
+  - {number: CSE 3421, name: Introduction to Computer Architecture}
+  - {number: CSE 5236, name: Mobile Application Development}
+  - {number: MATH 3607, name: Beginning Scientific Computing}

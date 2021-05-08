@@ -10,6 +10,8 @@ exps: # Array of hashes, each has keys +name+ and +skills+
     - Ruby
     - JavaScript
     - HTML/CSS
+    - Python
+    - SQL/SQLite
  - 
    name: Software Development Tools and Frameworks
    skills: 
@@ -24,6 +26,9 @@ exps: # Array of hashes, each has keys +name+ and +skills+
     - Eclipse IDE
     - Git Version Control
     - GitHub
+    - UML Modeling and Diagramming
+    - Relational Database Modeling
+    - .NET Core
  - 
    name: Miscallaneous
    skills:

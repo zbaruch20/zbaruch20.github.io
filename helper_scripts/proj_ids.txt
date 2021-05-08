@@ -11,3 +11,7 @@ xam_2
 components_2
 site_2
 react
+core
+bookstore
+spacex
+dyn_c
