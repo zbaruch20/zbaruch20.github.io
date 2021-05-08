@@ -1,0 +1,32 @@
+@import url(bootstrap.min.css);
+/* variables */
+/* functions - from Bootstrap */
+/* styling */
+body {
+  margin-top: 80px;
+  margin-bottom: 20px; }
+
+#logo {
+  font-size: 24px;
+  font-weight: bolder; }
+
+.page-header {
+  margin: 20px 0;
+  font-weight: 700; }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  img.bio {
+    padding-bottom: 20px; }
+
+.accordion-button[aria-expanded=true] {
+  background-color: #d1e7dd;
+  color: #198754; }
+
+.btn-home {
+  margin-top: 20px; }
+
+.disclaimer {
+  margin-top: 35px; }
