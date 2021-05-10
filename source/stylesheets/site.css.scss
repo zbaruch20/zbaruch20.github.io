@@ -1,7 +1,7 @@
 @import "bootstrap.min.css";
 
 /* variables */
-$green: #198754;
+$green: rgb(25, 135, 84);
 
 /* functions - from Bootstrap */
 
@@ -47,9 +47,28 @@ img {
   }
 }
 
-.accordion-button[aria-expanded=true] {
-  background-color: tint-color($green, 80%);
+code, a {
   color: $green;
+}
+
+a:hover {
+  color: tint-color($green, 25%);
+}
+
+.accordion-button {
+  &:not(.collapsed) {
+    background-color: tint-color($green, 80%);
+    color: $green;
+
+    &::after {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23198754'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    }
+  }
+
+  &:focus {
+    border-color: tint-color($green, 80%);
+    box-shadow: 0 0 0 .25rem rgba($green, .25);
+  }
 }
 
 .btn-home {
