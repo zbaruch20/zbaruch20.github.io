@@ -1,9 +1,21 @@
 <%#
   Local Variables:
 
-  hsh: The hash containing information for each course.
-  id: The course id to lookup.
+  hsh: The hash containing information for courses in each semester.
+  id: The semester id to lookup.
 %>
+
+<!-- Additional info for COVID-impacted semesters -->
+<% case id %>
+<% when 'sp20' %>
+  <p>Due to the COVID-19 pandemic, all courses taken in the Spring 2020 semester were transtioned from in-person to online delivery
+  midway through the semester.</p>
+<% when 'au20' %>
+  <p>Due to the COVID-19 pandemic, all courses taken in the Autumn 2020 semester were delivered in an online format,
+  with the exception of CSE 2501, which was delivered in-person at the beginning of the semester, but transitioned online halfway through.</p>
+<% when 'sp21' %>
+  <p>Due to the COVID-19 pandemic, all courses taken in the Spring 2021 semester were delivered in an online format.</p>
+<% end %>
 
 <% hsh[id].courses.each do |c| %>
 
