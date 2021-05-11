@@ -2,14 +2,14 @@
   Local Variables:
 
   hsh: The hash containing the information to display. Each value must be another hash with a name attribute.
-  keys: The keys of hsh, i.e. DOMAIN(hsh)
+  hsh_keys: The keys of hsh, i.e. DOMAIN(hsh)
   tab_content: String containing reference to partial for tab content.
 %>
 
 <!-- Key tabs -->
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <% keys.each do |id| %>
+    <% hsh_keys.each do |id| %>
       <a class="nav-link link-success" id="nav-<%= id %>-tab" data-bs-toggle="tab" href="#nav-<%= id %>"
          role="tab" aria-controls="nav-<%= id %>" aria-selected="false"><%= hsh[id].name %></a>
     <% end %>
@@ -18,7 +18,7 @@
 
 <!-- Tab content -->
 <div class="tab-content" id="nav-tabContent">
-  <% keys.each do |id| %>
+  <% hsh_keys.each do |id| %>
 
     <!-- Content for each key -->
     <div class="tab-pane fade" id="nav-<%= id %>" role="tabpanel" aria-labelledby="nav-<%= id %>-tab">

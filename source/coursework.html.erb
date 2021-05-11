@@ -12,5 +12,5 @@ header: Previous Relevant Coursework
 <% cw = data.coursework %>
 <% semesters = cw.keys.sort_by { |id| cw[id].idx } %>
 
-<%= partial 'layouts/tabs', locals: { hsh: cw, keys: semesters, tab_content: 'layouts/coursework/accordion' } %>
+<%= partial 'layouts/tabs', locals: { hsh: cw, hsh_keys: semesters, tab_content: 'layouts/coursework/accordion' } %>
 <%= partial 'layouts/home_button' %>

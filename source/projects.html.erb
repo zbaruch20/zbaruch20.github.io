@@ -12,5 +12,5 @@ header: Personal Projects
 <% projs = data.projects %>
 <% categories = projs.keys.sort_by { |id| projs[id].idx } %>
 
-<%= partial 'layouts/tabs', locals: { hsh: projs, keys: categories, tab_content: 'layouts/projects/accordion' } %>
+<%= partial 'layouts/tabs', locals: { hsh: projs, hsh_keys: categories, tab_content: 'layouts/projects/accordion' } %>
 <%= partial 'layouts/home_button' %>

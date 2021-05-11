@@ -12,5 +12,5 @@ header: My Current Résumé
 <% resume = data.resume %>
 <% categories = resume.keys.sort_by { |id| resume[id].idx } %>
 
-<%= partial 'layouts/tabs', locals: { hsh: resume, keys: categories, tab_content: 'layouts/resume/accordion' } %>
+<%= partial 'layouts/tabs', locals: { hsh: resume, hsh_keys: categories, tab_content: 'layouts/resume/accordion' } %>
 <%= partial 'layouts/home_button' %>
