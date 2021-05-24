@@ -12,5 +12,5 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 gem 'bootstrap'
 gem 'jquery-middleman'
 
-gem 'nokogiri', '>= 1.11.0.rc4' # GitHub told me to update this
-gem 'webrick'   # for ruby 3.0
+gem 'nokogiri', '>= 1.11.4' # Fix dependencies
+gem 'webrick'   # Ruby 3.0.1 compatability
