@@ -8,6 +8,6 @@ projects:
  - { id: set, name: The Game of SET }
  - { id: rails, name: Audience Evaluation of Presentations }
  - { id: xam_1, name: Basic Xamarin Application }
- - { id: core, name: \"Core\" Programming Language Interpreter }
+ - { id: core, name: '"Core" Programming Language Interpreter' }
  - { id: bookstore, name: Bookstore Relational Database }
  - { id: spacex, name: SpaceX Flight Scheduler Project Planning }
